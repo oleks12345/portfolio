@@ -1,4 +1,5 @@
 {
+
    "parser": "babel-eslint",
    "extends": [
       "airbnb",
@@ -7,6 +8,13 @@
       "prettier",
       "prettier/react"
    ],
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jest": true,
+      "node": true
+   },
    "globals": {
       "window": true,
       "document": true
@@ -20,7 +28,13 @@
       }
    },
    "rules": {
+      "jsx-a11y/href-no-hash": [ "off" ],
       "react/jsx-filename-extension": 0,
-      "import/prefer-default-export": 0
+      "import/prefer-default-export": 0,
+      "space-in-parens": [ 1, "always" ],
+      "arrowParens": [ "always" ],
+      "semi": [ 1, "always" ],
+      "singleQuote": true,
+      "trailingComma": "es5"
    }
 }
