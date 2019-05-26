@@ -9,7 +9,7 @@ const PageTemplate = ( { children } ) => {
    return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={ theme }>
         <>
           <Menu />
           {children}
