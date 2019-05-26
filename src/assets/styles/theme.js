@@ -10,18 +10,18 @@ export const theme = {
          s: '1.6rem',
          m: '2.5rem',
          l: '3.5rem',
-         xl: '7rem'
+         xl: '5rem',
       },
       weight: {
          light: 300,
          regular: 400,
          semibold: 600,
-         bold: 800
-      }
+         bold: 800,
+      },
    },
    mdq: {
       md: '@media (min-width: 768px)',
       lg: '@media (min-width: 1024px)',
-      xl: '@media(min-width: 1440px)'
-   }
+      xl: '@media(min-width: 1440px)',
+   },
 };
