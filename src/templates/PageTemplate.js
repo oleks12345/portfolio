@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "assets/styles/GlobalStyle";
 import { theme } from "assets/styles/theme";
-import Menu from "components/Menu/Menu";
+import Nav from "components/Menu/Nav";
 
 const PageTemplate = ( { children } ) => {
    return (
@@ -11,7 +11,7 @@ const PageTemplate = ( { children } ) => {
       <GlobalStyle />
       <ThemeProvider theme={ theme }>
         <>
-          <Menu />
+          <Nav />
           {children}
         </>
       </ThemeProvider>
