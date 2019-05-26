@@ -2,6 +2,7 @@ export const theme = {
    primary: '#ffffff',
    secondary: '#f7600e',
    grey: '#3b434c',
+   greyTransparent: 'rgba(59, 67, 76, 0.95)',
 
    font: {
       size: {
@@ -10,6 +11,12 @@ export const theme = {
          m: '2.5rem',
          l: '3.5rem',
          xl: '7rem'
+      },
+      weight: {
+         light: 300,
+         regular: 400,
+         semibold: 600,
+         bold: 800
       }
    },
    mdq: {
