@@ -4,8 +4,8 @@ import styled, { keyframes } from 'styled-components';
 
 const StyledButton = styled.button`
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   padding: 25px 15px;
   border: none;
   background-color: transparent;
@@ -32,10 +32,11 @@ const InnerButton = styled.div`
   animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( -10, 45 ) : () => burgerAnim( -10, 45, 1 )}
     0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
-
+  box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
   ::before,
   ::after {
     content: "";
+    box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
     position: absolute;
     width: 30px;
     height: 3px;
