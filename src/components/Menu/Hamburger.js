@@ -31,7 +31,7 @@ const InnerButton = styled.div`
   background-color: ${( { theme } ) => theme.primary};
   animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( -10, 45 ) : () => burgerAnim( -10, 45, 1 )}
-    1.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+    0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
 
   ::before,
   ::after {
@@ -46,12 +46,12 @@ const InnerButton = styled.div`
     top: -20px;
     animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( 20, -90 ) : () => burgerAnim( 20, -90, 1 )}
-      1.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+      0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
   }
   ::after {
     animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( 10, 0 ) : () => burgerAnim( 10, 0, 1 )}
-      1.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+      0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
     top: -10px;
   }
 `;
