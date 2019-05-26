@@ -11,7 +11,8 @@ const StyledNav = styled.nav`
   opacity: ${( { isOpen } ) => ( isOpen ? 1 : 0 )};
   transform: translateX(${( { isOpen } ) => ( isOpen ? '0' : '100%' )});
   background-color: ${( { theme } ) => theme.greyTransparent};
-  transition: opacity 0.3s;
+  transition: ${( { isOpen } ) =>
+      isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s'};
   display: flex;
   align-items: center;
   justify-content: center;
