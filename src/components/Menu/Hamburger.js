@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const StyledButton = styled.button`
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 25px 15px;
-  border: none;
-  background-color: transparent;
-  z-index: 99;
+   position: relative;
+   padding: 25px 15px;
+
+   border: none;
+   background-color: transparent;
+   z-index: 99;
 `;
 
 const burgerAnim = ( y, rot, dir = 0 ) => keyframes`
@@ -24,37 +23,37 @@ const burgerAnim = ( y, rot, dir = 0 ) => keyframes`
    }
 `;
 const InnerButton = styled.div`
-  position: relative;
-  width: 30px;
-  height: 3px;
-  top: 10px;
-  background-color: ${( { theme } ) => theme.primary};
-  animation: ${( { isOpen } ) =>
+   position: relative;
+   width: 30px;
+   height: 3px;
+   top: 10px;
+   background-color: ${( { theme } ) => theme.primary};
+   animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( -10, 45 ) : () => burgerAnim( -10, 45, 1 )}
-    0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
-  box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
-  ::before,
-  ::after {
-    content: "";
-    box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: ${( { theme } ) => theme.primary};
-    left: 0;
-  }
-  ::before {
-    top: -20px;
-    animation: ${( { isOpen } ) =>
+      0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+   box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
+   ::before,
+   ::after {
+      content: '';
+      box-shadow: 0 0 0 2px ${( { theme } ) => theme.greyTransparent};
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: ${( { theme } ) => theme.primary};
+      left: 0;
+   }
+   ::before {
+      top: -20px;
+      animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( 20, -90 ) : () => burgerAnim( 20, -90, 1 )}
-      0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
-  }
-  ::after {
-    animation: ${( { isOpen } ) =>
+         0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+   }
+   ::after {
+      animation: ${( { isOpen } ) =>
       isOpen ? () => burgerAnim( 10, 0 ) : () => burgerAnim( 10, 0, 1 )}
-      0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
-    top: -10px;
-  }
+         0.3s cubic-bezier(0.26, -0.39, 0.74, 1.49) forwards;
+      top: -10px;
+   }
 `;
 
 const Hamburger = ( { isOpen, ...props } ) => {
@@ -65,10 +64,10 @@ const Hamburger = ( { isOpen, ...props } ) => {
    );
 };
 Hamburger.propTypes = {
-   isOpen: PropTypes.bool
+   isOpen: PropTypes.bool,
 };
 Hamburger.defaultProps = {
-   isOpen: false
+   isOpen: false,
 };
 
 export default Hamburger;
