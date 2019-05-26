@@ -5,15 +5,21 @@ import styled from 'styled-components';
 const StyledHeader = styled.header`
    background: right/cover url(${headerImg});
    height: 100vh;
+   display: flex;
+   justify-content: center;
 `;
 const HeaderWrapper = styled.div`
    display: flex;
    height: 100%;
+   width: 100%;
    max-width: 1080px;
-   padding-left: 10%;
    align-items: center;
 
    color: ${( { theme } ) => theme.primary};
+   div {
+      width: 100%;
+      padding-left: 10%;
+   }
 `;
 const H1 = styled.h1`
    margin: 0;
@@ -43,7 +49,7 @@ const H2 = styled.h2`
 `;
 const Header = () => {
    return (
-      <StyledHeader>
+      <StyledHeader id="header">
          <HeaderWrapper>
             <div>
                <H1>
