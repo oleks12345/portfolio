@@ -1,9 +1,15 @@
 import React from 'react';
 import headerImg from 'assets/images/headerImg.webp';
 import styled from 'styled-components';
+import ScrollButton from 'components/ScrollButton/ScrollButton';
 
 const StyledHeader = styled.header`
-   background: right/cover url(${headerImg});
+   background: linear-gradient(
+         45deg,
+         rgba(59, 67, 76, 0.95) 0%,
+         rgba(59, 67, 76, 0.9) 100%
+      ),
+      right/cover url(${headerImg});
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -62,6 +68,7 @@ const Header = () => {
                </H2>
             </div>
          </HeaderWrapper>
+         <ScrollButton />
       </StyledHeader>
    );
 };
