@@ -34,7 +34,9 @@
       "space-in-parens": [ 1, "always" ],
       "arrowParens": [ "always" ],
       "semi": [ 1, "always" ],
-      "singleQuote": true,
+      "quotes": [ 1, "single", {
+         "avoidEscape": true
+      } ],
       "trailingComma": "es5",
       "block-spacing": [ 2, "always" ],
       "indent": [ 1, 3 ],
