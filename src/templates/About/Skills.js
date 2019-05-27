@@ -1,16 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import SkillSet from 'components/SkillSet/SkillSet';
 import { skills } from 'assets/content/skills';
 
 const skillSets = Object.keys( skills );
 
+const SkillsWrapper = styled.div`
+   width: 100%;
+`;
+
 const Skills = () => {
    return (
-      <div>
+      <SkillsWrapper>
          {skillSets.map( ( skillKey ) => (
             <SkillSet key={ skills[skillKey].name } skillSet={ skills[skillKey] } />
          ) )}
-      </div>
+      </SkillsWrapper>
    );
 };
 
