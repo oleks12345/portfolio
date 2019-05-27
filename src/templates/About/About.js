@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
+import Skills from 'templates/About/Skills';
 
 const StyledSection = styled.section`
    color: ${( { theme } ) => theme.grey};
@@ -39,6 +40,7 @@ const About = () => {
                <ColorSecondary as="strong">rozwój.</ColorSecondary>
             </AboutText>
          </AboutWrapper>
+         <Skills />
       </StyledSection>
    );
 };
