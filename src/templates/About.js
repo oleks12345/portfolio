@@ -4,6 +4,11 @@ import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 
 const StyledSection = styled.section`
    color: ${( { theme } ) => theme.grey};
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 10%;
+   padding-right: 10%;
 `;
 const Title = styled.h2`
    font-size: ${( { theme } ) => theme.font.size.l};
