@@ -7,7 +7,7 @@ const SkillWrapper = styled.li`
    flex-direction: column;
    text-align: center;
    padding: 15px;
-   width: 25%;
+   width: 50%;
    min-width: 120px;
    max-width: 200px;
 `;
