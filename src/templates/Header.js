@@ -23,10 +23,10 @@ const HeaderWrapper = styled.div`
    align-items: center;
 
    color: ${( { theme } ) => theme.primary};
-   div {
-      width: 100%;
-      padding-left: 10%;
-   }
+`;
+const HeaderPadding = styled.div`
+   width: 100%;
+   padding-left: 10%;
 `;
 const H1 = styled.h1`
    margin: 0;
@@ -56,7 +56,7 @@ const Header = () => {
    return (
       <StyledHeader id="header">
          <HeaderWrapper>
-            <div>
+            <HeaderPadding>
                <H1>
                   Cześć, <ColorSecondary>jestem</ColorSecondary> <br />
                   Aleksander Uniatowicz
@@ -65,7 +65,7 @@ const Header = () => {
                <H2>
                   FrontEnd <ColorSecondary> Developer </ColorSecondary>
                </H2>
-            </div>
+            </HeaderPadding>
          </HeaderWrapper>
          <ScrollButton />
       </StyledHeader>
