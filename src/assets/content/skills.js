@@ -1,6 +1,6 @@
 import placeholder from 'assets/images/skills/placeholder.svg';
 
-const skills = {};
+export const skills = {};
 skills.skills = {
    name: 'Umiejętności',
    content: [
