@@ -28,7 +28,7 @@ const HamburgerWrapper = styled.div`
 const Nav = () => {
    const [ isMenuOpen, setIsMenuOpen ] = useState( false );
    const handleMenuClick = () => setIsMenuOpen( !isMenuOpen );
-   const handleKeyboard = e => {
+   const handleKeyboard = ( e ) => {
       const code = e.keyCode;
       if ( code === 27 ) {
          setIsMenuOpen( false );
