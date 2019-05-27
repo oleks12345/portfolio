@@ -7,6 +7,7 @@ const skillSets = Object.keys( skills );
 
 const SkillsWrapper = styled.div`
    width: 100%;
+   max-width: ${( { theme } ) => theme.maxWidth};
 `;
 
 const Skills = () => {
