@@ -1,4 +1,4 @@
-import placeholder from 'assets/images/placeholder.svg';
+import placeholder from 'assets/images/skills/placeholder.svg';
 
 const skills = {};
 skills.skills = {
