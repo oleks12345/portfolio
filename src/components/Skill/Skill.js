@@ -1,12 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+const SkillWrapper = styled.li`
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 15px;
+   width: 25%;
+   min-width: 120px;
+   max-width: 200px;
+`;
+const SkillImg = styled.img`
+   width: 100%;
+   height: auto;
+`;
 
 const Skill = ( { skill } ) => {
    return (
-      <li>
-         <img src={ skill.icon } alt="" />
-         <div>{skill.name}</div>
-      </li>
+      <SkillWrapper>
+         <SkillImg src={ skill.icon } alt="" />
+         <p>{skill.name}</p>
+      </SkillWrapper>
    );
 };
 Skill.propTypes = {
