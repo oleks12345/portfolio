@@ -18,7 +18,7 @@ const Title = styled.h2`
 
 const About = () => {
    return (
-      <StyledSection>
+      <StyledSection id="about">
          <Title>
             O <ColorSecondary>Mnie</ColorSecondary>
          </Title>
