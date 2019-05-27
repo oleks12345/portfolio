@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: "Open Sans";
+      font-size: ${( { theme } ) => theme.font.size.s};
    }
 
    html{
