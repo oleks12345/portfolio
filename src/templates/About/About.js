@@ -12,7 +12,6 @@ const StyledSection = styled.section`
 `;
 const Title = styled.h2`
    font-size: ${( { theme } ) => theme.font.size.l};
-   font-weight: ${( { theme } ) => theme.font.weight.bold};
    text-align: center;
    text-transform: uppercase;
 `;
