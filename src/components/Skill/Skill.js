@@ -1,13 +1,18 @@
 import React from 'react';
-import placeholder from 'assets/images/skills/placeholder.svg';
+import PropTypes from 'prop-types';
 
-const Skill = () => {
+const Skill = ( { skill } ) => {
    return (
-      <div>
-         <img src={ placeholder } alt="" />
-         <div>PlaceHolder</div>
-      </div>
+      <li>
+         <img src={ skill.icon } alt="" />
+         <div>{skill.name}</div>
+      </li>
    );
 };
-
+Skill.propTypes = {
+   skill: PropTypes.shape( {
+      icon: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+   } ).isRequired,
+};
 export default Skill;
