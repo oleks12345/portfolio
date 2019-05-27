@@ -1,15 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import PageTemplate from "../templates/PageTemplate";
+import React from 'react';
+import styled from 'styled-components';
+import PageTemplate from 'templates/PageTemplate';
+import Header from 'templates/Header';
 
-const H1 = styled.h1`
-  font-size: 70px;
+const Placeholder = styled.div`
+   height: 100vh;
 `;
 
 const App = () => {
    return (
       <PageTemplate>
-         <H1>Hello</H1>
+         <Header>Hello</Header>
+         <Placeholder />
       </PageTemplate>
    );
 };

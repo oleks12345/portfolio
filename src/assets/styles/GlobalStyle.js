@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,800);
@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
    html{
       font-size: 62.5%;
+      scroll-behavior: smooth;
    }
 
    *, *::before, *::after {
