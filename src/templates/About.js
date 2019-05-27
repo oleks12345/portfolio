@@ -6,7 +6,7 @@ const StyledSection = styled.section`
    color: ${( { theme } ) => theme.grey};
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: center;
    padding-left: 10%;
    padding-right: 10%;
 `;
