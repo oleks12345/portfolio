@@ -1,10 +1,15 @@
 import React from 'react';
-import Skill from 'components/Skill/Skill';
+import SkillSet from 'components/SkillSet/SkillSet';
+import { skills } from 'assets/content/skills';
+
+const skillSets = Object.keys( skills );
 
 const Skills = () => {
    return (
       <div>
-         <Skill />
+         {skillSets.map( ( skillKey ) => (
+            <SkillSet key={ skills[skillKey].name } skillSet={ skills[skillKey] } />
+         ) )}
       </div>
    );
 };
