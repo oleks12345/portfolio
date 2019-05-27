@@ -8,6 +8,7 @@ const StyledNav = styled.nav`
    height: 100vh;
    top: 0;
    left: 0;
+   z-index: 90;
    opacity: ${( { isOpen } ) => ( isOpen ? 1 : 0 )};
    transform: translateX(${( { isOpen } ) => ( isOpen ? '0' : '100%' )});
    background-color: ${( { theme } ) => theme.greyTransparent};
