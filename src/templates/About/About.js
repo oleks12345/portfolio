@@ -34,8 +34,8 @@ const About = () => {
          <AboutWrapper>
             <AboutText>
                Szukam pracy jako FrontEnd developer we{' '}
-               <ColorSecondary as="strong">Wrocławiu.</ColorSecondary> Chciałbym
-               pracować w firmie która da mi szanse na{' '}
+               <ColorSecondary as="strong">Wrocławiu.</ColorSecondary> <br />
+               Chciałbym pracować w firmie która da mi szanse na{' '}
                <ColorSecondary as="strong">rozwój.</ColorSecondary>
             </AboutText>
          </AboutWrapper>
