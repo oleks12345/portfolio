@@ -8,7 +8,7 @@ const SkillSetHeader = styled.h3`
    font-size: ${( { theme } ) => theme.font.size.m};
 `;
 const SkillsList = styled.ul`
-   padding: 10px;
+   padding: 10px 0;
    list-style: none;
    display: flex;
    flex-wrap: wrap;
