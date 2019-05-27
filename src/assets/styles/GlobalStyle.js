@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
    *, *::before, *::after {
       box-sizing: border-box;
    }
+
+   h2, h3{
+      font-weight: ${( { theme } ) => theme.font.weight.semibold};
+   }
 `;
 
 export default GlobalStyle;
