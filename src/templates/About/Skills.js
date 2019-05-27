@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import SkillSet from 'components/SkillSet/SkillSet';
 import { skills } from 'assets/content/skills';
 
