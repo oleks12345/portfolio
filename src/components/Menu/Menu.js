@@ -25,12 +25,14 @@ const MenuUl = styled.ul`
    padding: 0;
 `;
 const MenuItem = styled.li`
-   padding-top: 10px;
-   padding-bottom: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
    font-size: ${( { theme } ) => theme.font.size.m};
    font-weight: ${( { theme } ) => theme.font.weight.semibold};
    ${( { theme } ) => theme.mdq.md} {
       font-size: ${( { theme } ) => theme.font.size.l};
+      padding-top: 10px;
+      padding-bottom: 10px;
    }
    a {
       color: ${( { theme } ) => theme.primary};
