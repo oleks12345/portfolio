@@ -19,7 +19,7 @@ const HeaderWrapper = styled.div`
    display: flex;
    height: 100%;
    width: 100%;
-   max-width: 1080px;
+   max-width: ${( { theme } ) => theme.maxWidth};
    align-items: center;
 
    color: ${( { theme } ) => theme.primary};
