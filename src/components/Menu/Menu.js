@@ -60,7 +60,7 @@ const Menu = ( { isOpen, menuItems, socials, itemClick } ) => {
    return (
       <StyledNav isOpen={ isOpen }>
          <MenuUl>
-            {menuItems.map( menuItem => (
+            {menuItems.map( ( menuItem ) => (
                <MenuItem key={ menuItem.id } onClick={ itemClick }>
                   <a href={ menuItem.id }>{menuItem.name}</a>
                </MenuItem>
@@ -68,7 +68,7 @@ const Menu = ( { isOpen, menuItems, socials, itemClick } ) => {
          </MenuUl>
          <Spacer />
          <SocialsUl>
-            {socials.map( social => (
+            {socials.map( ( social ) => (
                <SocialsItem key={ social.name }>
                   <a
                      rel="noopener noreferrer"
