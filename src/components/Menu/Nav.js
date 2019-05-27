@@ -16,7 +16,7 @@ const Wrapper = styled.div`
    > div {
       text-align: right;
       width: 100%;
-      max-width: 1080px;
+      max-width: ${( { theme } ) => theme.maxWidth};
    }
 `;
 const HamburgerWrapper = styled.div`
