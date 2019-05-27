@@ -6,6 +6,7 @@ import About from 'templates/About';
 
 const Placeholder = styled.div`
    height: 100vh;
+   background-color: #eee;
 `;
 
 const App = () => {
