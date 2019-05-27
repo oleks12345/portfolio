@@ -12,7 +12,7 @@ const SkillsList = styled.ul`
    list-style: none;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: space-around;
 `;
 const createSkillsList = ( skillList ) =>
    skillList.map( ( skill ) => <Skill key={ skill.name } skill={ skill } /> );
