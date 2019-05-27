@@ -1,21 +1,21 @@
-import IconGh from 'assets/images/github.svg';
-import IconFb from 'assets/images/facebook.svg';
-import IconIn from 'assets/images/linkedin.svg';
+import IconGh from 'assets/images/socials/github.svg';
+import IconFb from 'assets/images/socials/facebook.svg';
+import IconIn from 'assets/images/socials/linkedin.svg';
 
 export const socials = [
    {
       icon: IconFb,
       name: 'facebook',
-      link: ''
+      link: '',
    },
    {
       icon: IconGh,
       name: 'github',
-      link: ''
+      link: '',
    },
    {
       icon: IconIn,
       name: 'linkedin',
-      link: ''
-   }
+      link: '',
+   },
 ];
