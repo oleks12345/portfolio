@@ -6,6 +6,7 @@ const SkillWrapper = styled.li`
    display: flex;
    flex-direction: column;
    text-align: center;
+   justify-content: space-between;
    padding: 15px;
    width: 50%;
    min-width: 120px;
@@ -15,12 +16,15 @@ const SkillImg = styled.img`
    width: 100%;
    height: auto;
 `;
+const SkillTitle = styled.p`
+   text-transform: capitalize;
+`;
 
 const Skill = ( { skill } ) => {
    return (
       <SkillWrapper>
          <SkillImg src={ skill.icon } alt="" />
-         <p>{skill.name}</p>
+         <SkillTitle>{skill.name}</SkillTitle>
       </SkillWrapper>
    );
 };
