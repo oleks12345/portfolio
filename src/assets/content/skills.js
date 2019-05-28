@@ -39,7 +39,7 @@ skills.skills = {
       },
    ],
 };
-skills.tolls = {
+skills.tools = {
    name: 'Narzedzia i metodologie',
    content: [
       {
@@ -47,8 +47,8 @@ skills.tolls = {
          name: 'github',
       },
       {
-         icon: code,
-         name: 'visual studio code',
+         icon: sass,
+         name: 'sass',
       },
       {
          icon: styled,
@@ -59,8 +59,8 @@ skills.tolls = {
          name: 'BEM',
       },
       {
-         icon: sass,
-         name: 'sass',
+         icon: code,
+         name: 'visual studio code',
       },
       {
          icon: bootstrap,
