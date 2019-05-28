@@ -37,10 +37,6 @@ skills.skills = {
          icon: git,
          name: 'git',
       },
-      {
-         icon: bootstrap,
-         name: 'bootstrap4',
-      },
    ],
 };
 skills.tolls = {
@@ -65,6 +61,10 @@ skills.tolls = {
       {
          icon: sass,
          name: 'sass',
+      },
+      {
+         icon: bootstrap,
+         name: 'bootstrap4',
       },
    ],
 };
