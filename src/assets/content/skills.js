@@ -1,10 +1,15 @@
-import placeholder from 'assets/images/skills/placeholder.svg';
 import html from 'assets/images/skills/html-5.svg';
 import css from 'assets/images/skills/css-3.svg';
 import javascript from 'assets/images/skills/javascript.svg';
 import react from 'assets/images/skills/react.svg';
 import git from 'assets/images/skills/git-icon.svg';
 import bootstrap from 'assets/images/skills/bootstrap-solid.svg';
+import github from 'assets/images/skills/github-icon.svg';
+import code from 'assets/images/skills/vsc.svg';
+import bem from 'assets/images/skills/bem.svg';
+import styled from 'assets/images/skills/styled components.png';
+import express from 'assets/images/skills/express.svg';
+import nodejs from 'assets/images/skills/nodejs-icon.svg';
 
 export const skills = {};
 skills.skills = {
@@ -37,27 +42,23 @@ skills.skills = {
    ],
 };
 skills.tolls = {
-   name: 'Narzedzia',
+   name: 'Narzedzia i metodologie',
    content: [
       {
-         icon: placeholder,
-         name: 'PlaceholderT1',
+         icon: github,
+         name: 'github',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderT2',
+         icon: code,
+         name: 'visual studio code',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderT3',
+         icon: styled,
+         name: 'styled-components',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderT4',
-      },
-      {
-         icon: placeholder,
-         name: 'PlaceholderT5',
+         icon: bem,
+         name: 'BEM',
       },
    ],
 };
@@ -65,24 +66,12 @@ skills.learning = {
    name: 'Aktualnie uczę się',
    content: [
       {
-         icon: placeholder,
-         name: 'PlaceholderL1',
+         icon: nodejs,
+         name: 'node.js',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderL2',
-      },
-      {
-         icon: placeholder,
-         name: 'PlaceholderL3',
-      },
-      {
-         icon: placeholder,
-         name: 'PlaceholderL4',
-      },
-      {
-         icon: placeholder,
-         name: 'PlaceholderL5',
+         icon: express,
+         name: 'express',
       },
    ],
 };
