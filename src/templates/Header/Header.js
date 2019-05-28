@@ -58,8 +58,8 @@ const Header = () => {
          <HeaderWrapper>
             <HeaderPadding>
                <H1>
-                  Cześć, <ColorSecondary>jestem</ColorSecondary> <br />
-                  Aleksander Uniatowicz
+                  Cześć, <ColorSecondary> jestem </ColorSecondary> <br />
+                  Aleksander <ColorSecondary>Uniatowicz </ColorSecondary>
                </H1>
                <Spacer />
                <H2>

@@ -79,7 +79,7 @@ skills.tools = {
       },
       {
          icon: prettier,
-         name: 'bootprettierstrap4',
+         name: 'prettier',
       },
    ],
 };
