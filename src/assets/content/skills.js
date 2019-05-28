@@ -1,28 +1,38 @@
 import placeholder from 'assets/images/skills/placeholder.svg';
+import html from 'assets/images/skills/html-5.svg';
+import css from 'assets/images/skills/css-3.svg';
+import javascript from 'assets/images/skills/javascript.svg';
+import react from 'assets/images/skills/react.svg';
+import git from 'assets/images/skills/git-icon.svg';
+import bootstrap from 'assets/images/skills/bootstrap-solid.svg';
 
 export const skills = {};
 skills.skills = {
    name: 'Umiejętności',
    content: [
       {
-         icon: placeholder,
-         name: 'PlaceholderS1',
+         icon: html,
+         name: 'html',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderS2',
+         icon: css,
+         name: 'css',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderS3',
+         icon: javascript,
+         name: 'javascript',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderS4',
+         icon: react,
+         name: 'react',
       },
       {
-         icon: placeholder,
-         name: 'PlaceholderS5',
+         icon: git,
+         name: 'git',
+      },
+      {
+         icon: bootstrap,
+         name: 'bootstrap4',
       },
    ],
 };
