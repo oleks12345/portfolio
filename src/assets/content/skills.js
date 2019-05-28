@@ -9,6 +9,9 @@ import sass from 'assets/images/skills/sass.svg';
 import code from 'assets/images/skills/vsc.svg';
 import bem from 'assets/images/skills/bem.svg';
 import styled from 'assets/images/skills/styled components.png';
+import babel from 'assets/images/skills/babel.svg';
+import eslint from 'assets/images/skills/eslint.svg';
+import prettier from 'assets/images/skills/prettier.svg';
 import express from 'assets/images/skills/express.svg';
 import nodejs from 'assets/images/skills/nodejs-icon.svg';
 import mongodb from 'assets/images/skills/mongodb.svg';
@@ -65,6 +68,18 @@ skills.tools = {
       {
          icon: bootstrap,
          name: 'bootstrap4',
+      },
+      {
+         icon: babel,
+         name: 'babel',
+      },
+      {
+         icon: eslint,
+         name: 'eslint',
+      },
+      {
+         icon: prettier,
+         name: 'bootprettierstrap4',
       },
    ],
 };
