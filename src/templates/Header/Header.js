@@ -2,6 +2,7 @@ import React from 'react';
 import headerImg from 'assets/images/headerImg.webp';
 import styled from 'styled-components';
 import ScrollButton from 'components/ScrollButton/ScrollButton';
+import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 
 const StyledHeader = styled.header`
    background: linear-gradient(
@@ -18,14 +19,14 @@ const HeaderWrapper = styled.div`
    display: flex;
    height: 100%;
    width: 100%;
-   max-width: 1080px;
+   max-width: ${( { theme } ) => theme.maxWidth};
    align-items: center;
 
    color: ${( { theme } ) => theme.primary};
-   div {
-      width: 100%;
-      padding-left: 10%;
-   }
+`;
+const HeaderPadding = styled.div`
+   width: 100%;
+   padding-left: 10%;
 `;
 const H1 = styled.h1`
    margin: 0;
@@ -37,9 +38,7 @@ const H1 = styled.h1`
       font-size: ${( { theme } ) => theme.font.size.xl};
    }
 `;
-const ColorSec = styled.span`
-   color: ${( { theme } ) => theme.secondary};
-`;
+
 const Spacer = styled.hr`
    display: inline-block;
    margin: 15px 0;
@@ -57,16 +56,16 @@ const Header = () => {
    return (
       <StyledHeader id="header">
          <HeaderWrapper>
-            <div>
+            <HeaderPadding>
                <H1>
-                  Cześć, <ColorSec>jestem</ColorSec> <br />
-                  Aleksander Uniatowicz
+                  Cześć, <ColorSecondary> jestem </ColorSecondary> <br />
+                  Aleksander <ColorSecondary>Uniatowicz </ColorSecondary>
                </H1>
                <Spacer />
                <H2>
-                  FrontEnd <ColorSec> Developer </ColorSec>
+                  FrontEnd <ColorSecondary> Developer </ColorSecondary>
                </H2>
-            </div>
+            </HeaderPadding>
          </HeaderWrapper>
          <ScrollButton />
       </StyledHeader>

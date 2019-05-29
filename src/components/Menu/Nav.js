@@ -13,16 +13,11 @@ const Wrapper = styled.div`
    z-index: 99;
    display: flex;
    justify-content: center;
-   > div {
-      text-align: right;
-      width: 100%;
-      max-width: 1080px;
-   }
 `;
 const HamburgerWrapper = styled.div`
    text-align: right;
    width: 100%;
-   max-width: 1080px;
+   max-width: ${( { theme } ) => theme.maxWidth};
 `;
 
 const Nav = () => {

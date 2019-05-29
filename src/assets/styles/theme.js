@@ -19,6 +19,7 @@ export const theme = {
          bold: 800,
       },
    },
+   maxWidth: '1080px',
    mdq: {
       md: '@media (min-width: 768px)',
       lg: '@media (min-width: 1024px)',

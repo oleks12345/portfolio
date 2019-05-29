@@ -1,18 +1,18 @@
 export const menuItems = [
    {
       name: 'Home',
-      id: '#header'
+      id: '#header',
+   },
+   {
+      name: 'O mnie',
+      id: '#about',
    },
    {
       name: 'placeaholder',
-      id: '#1'
+      id: '#2',
    },
    {
       name: 'placeaholder',
-      id: '#2'
+      id: '#3',
    },
-   {
-      name: 'placeaholder',
-      id: '#3'
-   }
 ];

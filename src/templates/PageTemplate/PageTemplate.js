@@ -7,22 +7,22 @@ import Nav from 'components/Menu/Nav';
 
 const PageTemplate = ( { children } ) => {
    return (
-    <>
-      <GlobalStyle />
-      <ThemeProvider theme={ theme }>
-        <>
-          <Nav />
-          {children}
-        </>
-      </ThemeProvider>
-    </>
+      <>
+         <ThemeProvider theme={ theme }>
+            <>
+               <GlobalStyle />
+               <Nav />
+               {children}
+            </>
+         </ThemeProvider>
+      </>
    );
 };
 PageTemplate.propTypes = {
    children: PropTypes.oneOfType( [
       PropTypes.arrayOf( PropTypes.node ),
-      PropTypes.node
-   ] ).isRequired
+      PropTypes.node,
+   ] ).isRequired,
 };
 
 export default PageTemplate;
