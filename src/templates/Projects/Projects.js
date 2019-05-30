@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
+import ProjectsSet from 'components/ProjectsSet/ProjectsSet';
 
 const ProjectsSection = styled.section`
    color: ${( { theme } ) => theme.grey};
@@ -12,6 +13,7 @@ const ProjectsSection = styled.section`
 const Title = styled.h2`
    font-size: ${( { theme } ) => theme.font.size.l};
    text-transform: uppercase;
+   text-align: center;
 `;
 
 const Projects = () => {
@@ -20,6 +22,7 @@ const Projects = () => {
          <Title>
             Moje <ColorSecondary>Projekty</ColorSecondary>
          </Title>
+         <ProjectsSet />
       </ProjectsSection>
    );
 };
