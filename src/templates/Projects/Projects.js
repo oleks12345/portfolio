@@ -22,11 +22,11 @@ const Title = styled.h2`
 `;
 
 const createProjects = ( projects ) =>
-   projects.forEach( ( project ) => {
+   projects.forEach( ( projectSet ) => {
       return (
          <ProjectsSet
-            title={ project.category }
-            projectsList={ project.projectsList }
+            title={ projectSet.category }
+            projectsList={ projectSet.projectsList }
          />
       );
    } );
