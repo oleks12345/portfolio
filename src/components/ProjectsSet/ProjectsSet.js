@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Project from 'components/Project/Project';
 
 const Title = styled.h2`
+   text-align: center;
    font-size: ${( { theme } ) => theme.font.size.m};
 `;
 const createProjectsList = ( projectsList ) =>
