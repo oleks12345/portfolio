@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 import ProjectsSet from 'components/ProjectsSet/ProjectsSet';
+import { projects } from 'assets/content/projects';
 
 const ProjectsSection = styled.section`
    color: ${( { theme } ) => theme.grey};
@@ -10,19 +11,35 @@ const ProjectsSection = styled.section`
    align-items: center;
    padding: 50px 10%;
 `;
+const ProjectsWrapper = styled.div`
+   width: 100%;
+   max-width: ${( { theme } ) => theme.maxWidth};
+`;
 const Title = styled.h2`
    font-size: ${( { theme } ) => theme.font.size.l};
    text-transform: uppercase;
    text-align: center;
 `;
 
+const createProjects = ( projects ) =>
+   projects.forEach( ( project ) => {
+      return (
+         <ProjectsSet
+            title={ project.category }
+            projectsList={ project.projectsList }
+         />
+      );
+   } );
+
 const Projects = () => {
    return (
       <ProjectsSection>
-         <Title>
-            Moje <ColorSecondary>Projekty</ColorSecondary>
-         </Title>
-         <ProjectsSet />
+         <ProjectsWrapper>
+            <Title>
+               Moje <ColorSecondary>Projekty</ColorSecondary>
+            </Title>
+            {createProjects( projects )}
+         </ProjectsWrapper>
       </ProjectsSection>
    );
 };
