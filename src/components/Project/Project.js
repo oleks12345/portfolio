@@ -6,7 +6,7 @@ const ProjectWrapper = styled.div`
    width: 100%;
 
    font-size: ${( { theme } ) => theme.font.size.s};
-   ${( { theme } ) => theme.mdq.md} {
+   ${( { theme } ) => theme.mdq.lg} {
       width: ${( { isBig } ) => ( isBig ? '100%' : '50%' )};
    }
 `;
