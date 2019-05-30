@@ -3,6 +3,7 @@ import spacerImg from 'assets/images/spacerImg.webp';
 
 export const Spacer = styled.div`
    position: relative;
+   overflow: hidden;
    height: 250px;
    min-height: 20vh;
    background: linear-gradient(
