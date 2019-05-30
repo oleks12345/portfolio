@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Project from 'components/Project/Project';
 
 const Title = styled.h2`
-   font-size: ${( props ) => props.theme.font.size.m};
+   font-size: ${( { theme } ) => theme.font.size.m};
 `;
 const createProjectsList = ( projectsList ) =>
    projectsList.map( ( project ) => (
