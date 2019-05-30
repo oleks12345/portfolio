@@ -1,3 +1,4 @@
+import canis from 'assets/images/projects/canis.webp';
 import placeholder from 'assets/images/projects/placeholder.svg';
 
 export const projects = [
@@ -5,10 +6,10 @@ export const projects = [
       category: 'Komercyjne',
       projectsList: [
          {
-            title: 'Placeholder Title',
-            img: placeholder,
+            title: 'canis',
+            img: canis,
             desc:
-               'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas commodi totam et rerum aspernatur? Voluptates?',
+               'Strona wykonana dla wrocłąwskiego weterynarza. <br>Zakres: Projekt i budowa strony, deployment  <br> Wykożystane technologie: Sass  ',
             isBig: true,
          },
          {
