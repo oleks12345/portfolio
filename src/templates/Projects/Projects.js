@@ -22,9 +22,10 @@ const Title = styled.h2`
 `;
 
 const createProjects = ( projects ) =>
-   projects.forEach( ( projectSet ) => {
+   projects.map( ( projectSet ) => {
       return (
          <ProjectsSet
+            key={ projectSet.category }
             title={ projectSet.category }
             projectsList={ projectSet.projectsList }
          />
