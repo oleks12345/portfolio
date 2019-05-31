@@ -112,7 +112,7 @@ skills.learning = {
    ],
 };
 skills.used = {
-   name: 'Miałem okazję kożystać z',
+   name: 'Miałem okazję korzystać z',
    content: [
       {
          icon: apache,
