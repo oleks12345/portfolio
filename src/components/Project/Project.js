@@ -66,23 +66,26 @@ const ProjectLink = styled.a`
    ::after {
       content: '';
       position: absolute;
-      transition: transform 0.3s cubic-bezier(0.5, -0.2, 0.75, 0.72);
+      transition: transform 0.3s cubic-bezier(0.5, -0.2, 0.75, 0.72),
+         opacity 0.3s cubic-bezier(0.5, -0.2, 0.75, 0.72);
       left: 0;
       top: 10%;
       width: 100%;
       height: 80%;
-      transform: translateX(100%) scale(0);
+      transform: translateX(100%) scale(0.5);
       background-color: white;
-      opacity: 0.2;
+      opacity: 0;
       z-index: 1;
    }
    ::after {
-      transform: translateX(-100%) scale(0);
+      transform: translateX(-100%) scale(0.5);
    }
    :hover:before {
       transform: translateX(calc(50% + 60px)) scale(1);
+      opacity: 0.4;
    }
    :hover:after {
+      opacity: 0.4;
       transform: translateX(calc(-50% - 60px)) scale(1);
    }
 `;
