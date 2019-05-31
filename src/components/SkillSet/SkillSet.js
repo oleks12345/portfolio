@@ -27,10 +27,12 @@ const SkillSet = ( { skillSet } ) => {
 SkillSet.propTypes = {
    skillSet: PropTypes.shape( {
       name: PropTypes.string.isRequired,
-      content: PropTypes.shape( {
-         icon: PropTypes.string.isRequired,
-         name: PropTypes.string.isRequired,
-      } ).isRequired,
+      content: PropTypes.arrayOf(
+         PropTypes.shape( {
+            icon: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+         } )
+      ).isRequired,
    } ).isRequired,
 };
 export default SkillSet;

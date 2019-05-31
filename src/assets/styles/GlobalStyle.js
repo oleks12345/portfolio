@@ -8,7 +8,16 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       font-family: "Open Sans";
       font-size: ${( { theme } ) => theme.font.size.s};
+      ::-webkit-scrollbar {
+         width: 8px;
+         background-color:${( { theme } ) => theme.greyTransparent};
+      }
+      ::-webkit-scrollbar-thumb {
+         border-radius: 10px;
+         background: ${( { theme } ) => theme.secondary};
+      }
    }
+  
 
    html{
       font-size: 62.5%;
