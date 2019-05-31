@@ -8,8 +8,8 @@ export const menuItems = [
       id: '#about',
    },
    {
-      name: 'placeaholder',
-      id: '#2',
+      name: 'Projekty',
+      id: '#projects',
    },
    {
       name: 'placeaholder',
