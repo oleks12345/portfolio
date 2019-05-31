@@ -115,16 +115,16 @@ skills.used = {
    name: 'Miałem okazję korzystać z',
    content: [
       {
-         icon: apache,
-         name: 'apache web server',
+         icon: nginx,
+         name: 'nginx web server',
       },
       {
          icon: jenkins,
          name: 'jenkins cI',
       },
       {
-         icon: nginx,
-         name: 'nginx web server',
+         icon: apache,
+         name: 'apache web server',
       },
    ],
 };
