@@ -10,10 +10,10 @@ export const projects = [
          {
             title: 'canis',
             img: canis,
-            desc: `Strona wykonana dla wrocłąwskiego weterynarza. <br>
+            desc: `Strona wykonana dla wrocławskiego weterynarza. <br>
                Zakres: Projekt i budowa strony, deployment  <br>
-               Wykożystane technologie: Sass  <br>
-               CSS w metodoligii BEM`,
+               Wykorzystane technologie: Sass  <br>
+               CSS w metodologii BEM`,
             isBig: true,
             links: {
                liveLink: 'https://canis.wroclaw.pl',
@@ -28,7 +28,7 @@ export const projects = [
             title: 'Mache',
             img: mache,
             desc:
-               'HTML to PSD <br>Strona wykonana na podstawie template psd<br>Wykożystane technologie: bootstrap',
+               'HTML to PSD <br>Strona wykonana na podstawie template psd<br>Wykorzystane technologie: bootstrap',
             links: {
                githubLink:
                   'https://github.com/oleks12345/Bootstrap-Projects/tree/master/Mache',
@@ -40,9 +40,9 @@ export const projects = [
             img: portfolio,
             desc: `Moje portfolio w React 
                <br>
-               Wykożystane technologie: React, styled-components 
+               Wykorzystane technologie: React, styled-components 
                <br>
-               Wykożystane narzędzia: npm, eslint, prettier, create-react-app`,
+               Wykorzystane narzędzia: npm, eslint, prettier, create-react-app`,
             links: {
                githubLink: 'https://github.com/oleks12345/portfolio',
                liveLink: 'https://oleks.pl/',
