@@ -34,7 +34,7 @@ const createProjects = ( projects ) =>
 
 const Projects = () => {
    return (
-      <ProjectsSection>
+      <ProjectsSection id="projects">
          <ProjectsWrapper>
             <Title>
                Moje <ColorSecondary>Projekty</ColorSecondary>
