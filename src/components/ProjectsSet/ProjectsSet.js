@@ -7,6 +7,11 @@ const Title = styled.h2`
    text-align: center;
    font-size: ${( { theme } ) => theme.font.size.m};
 `;
+const ProjectsWrapper = styled.div`
+   display: flex;
+   flex-wrap: wrap;
+`;
+
 const createProjectsList = ( projectsList ) =>
    projectsList.map( ( project ) => (
       <Project key={ project.title } project={ project } />
@@ -16,7 +21,7 @@ const ProjectsSet = ( { title, projectsList } ) => {
    return (
       <div>
          <Title>{title}</Title>
-         {createProjectsList( projectsList )}
+         <ProjectsWrapper>{createProjectsList( projectsList )}</ProjectsWrapper>
       </div>
    );
 };
