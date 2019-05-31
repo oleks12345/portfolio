@@ -61,6 +61,30 @@ const ProjectLink = styled.a`
    ${( { theme } ) => theme.mdq.lg} {
       max-width: none;
    }
+   overflow: hidden;
+   ::before,
+   ::after {
+      content: '';
+      position: absolute;
+      transition: transform 0.5s ease;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(100%);
+      background-color: white;
+      opacity: 0.2;
+      z-index: 1;
+   }
+   ::after {
+      transform: translateX(-100%);
+   }
+   :hover:before {
+      transform: translateX(80%);
+   }
+   :hover:after {
+      transform: translateX(-80%);
+   }
 `;
 const ProjectLinkImg = styled.img`
    height: 100%;
