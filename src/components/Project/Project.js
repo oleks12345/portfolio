@@ -113,7 +113,7 @@ const Project = ( { project } ) => {
                {project.links.githubLink && (
                   <ProjectLink gh href={ project.links.githubLink }>
                      <ProjectLinkImg src={ githubIcon } alt="" />
-                     Github
+                     GitHub
                   </ProjectLink>
                )}
                {project.links.liveLink && (

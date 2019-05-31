@@ -50,7 +50,7 @@ skills.skills = {
    ],
 };
 skills.tools = {
-   name: 'Narzedzia i metodologie',
+   name: 'Narzędzia i metodologie',
    content: [
       {
          icon: github,
