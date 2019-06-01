@@ -18,6 +18,7 @@ const App = () => {
          <About />
          <Spacer />
          <Projects />
+         <Spacer />
          <Placeholder />
       </PageTemplate>
    );
