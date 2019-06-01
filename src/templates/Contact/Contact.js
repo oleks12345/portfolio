@@ -8,6 +8,7 @@ import messengerIcon from 'assets/images/contact/messenger.svg';
 import phoneIcon from 'assets/images/contact/phone.svg';
 import gitHubIcon from 'assets/images/contact/github.svg';
 import linkedInIcon from 'assets/images/contact/linkedin.svg';
+import cvIcon from 'assets/images/contact/CV.svg';
 
 const ContactWrapper = styled.div`
    width: 100%;
@@ -42,11 +43,14 @@ const Contact = () => {
                messengerze
             </ContactItem>
             <ContactItem href="https://github.com/oleks12345/">
-               <ContactImg src={ gitHubIcon } alt="Telefon" /> oleks12345
+               <ContactImg src={ gitHubIcon } alt="GitHub" /> oleks12345
             </ContactItem>
             <ContactItem href="https://www.linkedin.com/in/aleksander-uniatowicz-175650153/">
-               <ContactImg src={ linkedInIcon } alt="Telefon" /> Aleksander
+               <ContactImg src={ linkedInIcon } alt="LinkedIn" /> Aleksander
                Uniatowicz
+            </ContactItem>
+            <ContactItem href="cv.pdf">
+               <ContactImg src={ cvIcon } alt="" /> Pobierz CV
             </ContactItem>
          </ContactWrapper>
       </StyledSection>
