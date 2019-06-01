@@ -6,6 +6,8 @@ import { StyledTitle } from 'components/StyledTitle/StyledTitle';
 import mailIcon from 'assets/images/contact/mail.svg';
 import messengerIcon from 'assets/images/contact/messenger.svg';
 import phoneIcon from 'assets/images/contact/phone.svg';
+import gitHubIcon from 'assets/images/contact/github.svg';
+import linkedInIcon from 'assets/images/contact/linkedin.svg';
 
 const ContactWrapper = styled.div`
    width: 100%;
@@ -38,6 +40,13 @@ const Contact = () => {
             <ContactItem>
                <ContactImg src={ phoneIcon } alt="Telefon" /> Zapytaj na mailu lub
                messengerze
+            </ContactItem>
+            <ContactItem href="https://github.com/oleks12345/">
+               <ContactImg src={ gitHubIcon } alt="Telefon" /> oleks12345
+            </ContactItem>
+            <ContactItem href="https://www.linkedin.com/in/aleksander-uniatowicz-175650153/">
+               <ContactImg src={ linkedInIcon } alt="Telefon" /> Aleksander
+               Uniatowicz
             </ContactItem>
          </ContactWrapper>
       </StyledSection>
