@@ -2,14 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 import Skills from 'templates/About/Skills';
+import { StyledSection } from 'components/StyledSection/StyledSection';
 
-const StyledSection = styled.section`
-   color: ${( { theme } ) => theme.grey};
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 50px 10%;
-`;
 const Title = styled.h2`
    font-size: ${( { theme } ) => theme.font.size.l};
    text-align: center;
