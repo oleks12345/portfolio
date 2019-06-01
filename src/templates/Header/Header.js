@@ -27,6 +27,7 @@ const HeaderWrapper = styled.div`
 const HeaderPadding = styled.div`
    width: 100%;
    padding-left: 10%;
+   padding-right: 10%;
 `;
 const H1 = styled.h1`
    margin: 0;

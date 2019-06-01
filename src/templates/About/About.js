@@ -2,19 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 import Skills from 'templates/About/Skills';
-
-const StyledSection = styled.section`
-   color: ${( { theme } ) => theme.grey};
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 50px 10%;
-`;
-const Title = styled.h2`
-   font-size: ${( { theme } ) => theme.font.size.l};
-   text-align: center;
-   text-transform: uppercase;
-`;
+import { StyledSection } from 'components/StyledSection/StyledSection';
+import { StyledTitle } from 'components/StyledTitle/StyledTitle';
 
 const AboutWrapper = styled.div`
    width: 100%;
@@ -27,9 +16,9 @@ const AboutText = styled.p``;
 const About = () => {
    return (
       <StyledSection id="about">
-         <Title>
+         <StyledTitle>
             O <ColorSecondary>Mnie</ColorSecondary>
-         </Title>
+         </StyledTitle>
 
          <AboutWrapper>
             <AboutText>

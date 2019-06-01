@@ -12,7 +12,7 @@ export const menuItems = [
       id: '#projects',
    },
    {
-      name: 'placeaholder',
-      id: '#3',
+      name: 'Kontakt',
+      id: '#contact',
    },
 ];

@@ -31,6 +31,7 @@ export const Spacer = styled.div`
       border-width: 10px 100vw 0 0;
       border-color: ${( { theme } ) => theme.primary} transparent transparent
          transparent;
+      ${( { rotate } ) => ( rotate ? 'transform: rotateY(180deg)' : '' )}
    }
    ::after {
       bottom: 0;
