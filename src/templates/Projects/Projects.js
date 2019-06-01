@@ -1,16 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { StyledSection } from 'components/StyledSection/StyledSection';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 import ProjectsSet from 'components/ProjectsSet/ProjectsSet';
 import { projects } from 'assets/content/projects';
 
-const ProjectsSection = styled.section`
-   color: ${( { theme } ) => theme.grey};
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 50px 10%;
-`;
 const ProjectsWrapper = styled.div`
    width: 100%;
    max-width: ${( { theme } ) => theme.maxWidth};
@@ -34,14 +28,14 @@ const createProjects = ( projects ) =>
 
 const Projects = () => {
    return (
-      <ProjectsSection id="projects">
+      <StyledSection id="projects">
          <ProjectsWrapper>
             <Title>
                Moje <ColorSecondary>Projekty</ColorSecondary>
             </Title>
             {createProjects( projects )}
          </ProjectsWrapper>
-      </ProjectsSection>
+      </StyledSection>
    );
 };
 
