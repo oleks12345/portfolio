@@ -28,7 +28,7 @@ const ContactImg = styled.img`
 
 const Contact = () => {
    return (
-      <StyledSection>
+      <StyledSection id="contact">
          <StyledTitle>Kontakt</StyledTitle>
          <ContactWrapper>
             <ContactItem href="mailto:kontakt@oleks.pl">
