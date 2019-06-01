@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledSection } from 'components/StyledSection/StyledSection';
+import { StyledTitle } from 'components/StyledTitle/StyledTitle';
 import { ColorSecondary } from 'components/ColorSecondary/ColorSecondary';
 import ProjectsSet from 'components/ProjectsSet/ProjectsSet';
 import { projects } from 'assets/content/projects';
@@ -8,11 +9,6 @@ import { projects } from 'assets/content/projects';
 const ProjectsWrapper = styled.div`
    width: 100%;
    max-width: ${( { theme } ) => theme.maxWidth};
-`;
-const Title = styled.h2`
-   font-size: ${( { theme } ) => theme.font.size.l};
-   text-transform: uppercase;
-   text-align: center;
 `;
 
 const createProjects = ( projects ) =>
@@ -30,9 +26,9 @@ const Projects = () => {
    return (
       <StyledSection id="projects">
          <ProjectsWrapper>
-            <Title>
+            <StyledTitle>
                Moje <ColorSecondary>Projekty</ColorSecondary>
-            </Title>
+            </StyledTitle>
             {createProjects( projects )}
          </ProjectsWrapper>
       </StyledSection>
