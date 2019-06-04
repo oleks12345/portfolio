@@ -31,25 +31,28 @@ const Contact = () => {
       <StyledSection id="contact">
          <StyledTitle>Kontakt</StyledTitle>
          <ContactWrapper>
-            <ContactItem href="mailto:kontakt@oleks.pl">
+            <ContactItem title="E-Mail" href="mailto:kontakt@oleks.pl">
                <ContactImg src={ mailIcon } alt="e-mail" /> kontakt@oleks.pl
             </ContactItem>
-            <ContactItem href="https://m.me/oleks12345">
+            <ContactItem title="Messenger" href="https://m.me/oleks12345">
                <ContactImg src={ messengerIcon } alt="messenger" /> Aleksander
                Uniatowicz
             </ContactItem>
-            <ContactItem>
+            <ContactItem title="Telefon">
                <ContactImg src={ phoneIcon } alt="Telefon" /> Zapytaj na mailu lub
                messengerze
             </ContactItem>
-            <ContactItem href="https://github.com/oleks12345/">
+            <ContactItem title="Github" href="https://github.com/oleks12345/">
                <ContactImg src={ gitHubIcon } alt="GitHub" /> oleks12345
             </ContactItem>
-            <ContactItem href="https://www.linkedin.com/in/aleksander-uniatowicz-175650153/">
+            <ContactItem
+               title="LinkedIn"
+               href="https://www.linkedin.com/in/aleksander-uniatowicz-175650153/"
+            >
                <ContactImg src={ linkedInIcon } alt="LinkedIn" /> Aleksander
                Uniatowicz
             </ContactItem>
-            <ContactItem href="cv.pdf">
+            <ContactItem title="CV" href="cv.pdf">
                <ContactImg src={ cvIcon } alt="" /> Pobierz CV
             </ContactItem>
          </ContactWrapper>
