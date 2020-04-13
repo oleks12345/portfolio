@@ -22,7 +22,9 @@ const About = () => {
 
          <AboutWrapper>
             <AboutText>
-               Szukam pracy jako FrontEnd Developer we{' '}
+               Jestem studentem informatyki na Uniwersytecie Wrocławskim,
+               Interesują mnie technologie webowe. <br />
+               Szukam pracy jako Developer we{' '}
                <ColorSecondary as="strong">Wrocławiu.</ColorSecondary> <br />
                Chciałbym pracować w firmie, która da mi szanse na{' '}
                <ColorSecondary as="strong">rozwój.</ColorSecondary>
